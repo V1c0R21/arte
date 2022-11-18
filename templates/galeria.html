@@ -1,0 +1,140 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css_crud.css')}}">
+
+
+<body >
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="static/todos.jpg" width="500px" class="d-block w-100" height="700" >
+      <div class="carousel-caption d-none d-md-block">
+        <h5 >.:.Todos tenemos un artista dentro de nosotros .:.</h5>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="static/la_mona_lisa.jpg" width="500" class="d-block w-100" height="700">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color:#F4F4F6";>La Gioconda</h5>
+        <p style="color:#F4F4F6";>El retrato de Lisa Gherardini, esposa de Francesco del Giocondo, ​ más conocido como La Gioconda o Monna Lisa, es una obra pictórica del polímata renacentista italiano Leonardo da Vinci.
+          Fue adquirida por el rey Francisco I de Francia a comienzos del siglo XVI y desde entonces es propiedad del Estado francés.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/ultima_cena.jpg" width="500" class="d-block w-100" height="700">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>El Señor Jesús</h5>
+        <p> la noche en que fue entregado, tomó el pan, dio gracias, lo partió y dijo: “Esto es mi cuerpo, que se entrega por ustedes. Hagan esto en memoria mía”. De la misma manera, después de cenar, tomó la copa, diciendo: “Esta copa es la nueva alianza que se sella con mi sangre. Siempre
+          que la beban, háganlo en memoria mía”, así cuenta San Pablo, en su primera carta a los corintios, la última cena de Jesús.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<br>
+<br>
+<br>
+
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="static/frases_arte.jpg" width="500px" class="d-block w-100" height="700" >
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color:#F4F4F6";>La definicion del arte es:</h5>
+        <p style="color:#F4F4F6";>La Actividad en la que el hombre recrea, con una finalidad estética, un aspecto de la realidad o un sentimiento en formas bellas valiéndose de la materia, la imagen o el sonido.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="static/capillas.jpg" width="500" class="d-block w-100" height="700">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color:#F4F4F6";>¿Qué es el arte y cuáles son los tipos de arte?</h5>
+        <p style="color:#F4F4F6";>Las manifestaciones del arte constituyen disciplinas artísticas. Entre estas suelen distinguirse las bellas artes y las artes aplicadas. Las bellas artes son la pintura, la escultura,
+          la música, las artes escénicas, la literatura, la arquitectura o el cine.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/elgrito.jpg" width="500" class="d-block w-100" height="700">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color:#F4F4F6";>El grito</h5>
+        <p style="color:#F4F4F6"; >Es el título de cuatro cuadros del noruego Edvard Munch. La versión más famosa se encuentra en la Galería Nacional de Noruega y fue completada en 1893.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="static/arte.jpg" width="500px" class="d-block w-100" height="700" >
+      <div class="carousel-caption d-none d-md-block">
+        <h5>El ser humano, ha tenido siempre la necesidad de perpetuarse, no sólo como especie, reproduciéndose, sino también como ser superior a través de sus ideas. Para ello ha necesitado de la expresión artística, convirtiéndola en pura necesidad para su desarrollo y su equilibrio emocional y espiritual.</h5>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="static/puntillismo.jpg" width="500" class="d-block w-100" height="700">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>El puntillismo es una técnica artística que consiste en hacer una obra mediante el uso de diminutos puntos. Apareció por primera vez en 1884, en Francia encabezada por el pintor neoimpresionista Georges Seurat, al que le siguieron artistas como Henri-Edmond Cross y Vlaho Bukovac.</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/renacimiento_esculturas.jpg" width="500" class="d-block w-100" height="700">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color:#F4F4F6";>Renacimiento es el nombre dado en el siglo XIX a un amplio movimiento cultural que se produjo en Europa Occidental durante los siglos XV y XVI. Fue un periodo de transición entre la Edad Media y los inicios de la Edad Moderna. </h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</body>
+
+{% endblock %}

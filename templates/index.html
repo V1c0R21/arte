@@ -1,0 +1,125 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<!Doctypehtml>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MUSIC ELITE</title>
+
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css_index.css')}}">
+    </head>
+
+    <body>
+    <center>
+           <header id="principal">
+               <span id= "titulo"> ARTE </span>
+            </header>
+           <header>
+
+
+            <section class="main">
+                <section class="articles">
+                    <article>
+                        <center><h1 style="color:#F4F4F6";>SECCIÓN PRINCIPAL DE LA PAGINA</h1></center>
+                        <br>
+                        <p style="color:#F4F4F6";> En esta seccion puedes encontrar la informacion necesaria principal de la pagina.
+                        <br>
+                       Tenemos muchos mas productos y articulos  en tienda no dudes en marcar a los telefonos que se encuentran en nuestra pagina de servicios, te invitamos a que entres mas a afondo al sitio.
+                        <br>
+                    </article>
+
+
+                </section>
+
+
+            </section>
+               <br>
+               <br>
+               <section class="main">
+                <section class="articles">
+                <article>
+                        <center><h1 style="color:#F4F4F6";>.:.:. ¿Qué es el ARTE? .:.:.</h1></center>
+                        <br>
+                    <p style="color:#F4F4F6";>El arte (del latín ars) es el concepto que engloba todas las creaciones realizadas por el ser humano para expresar una visión sensible acerca del mundo, ya sea real o imaginario. Mediante recursos plásticos, lingüísticos o sonoros, el arte permite expresar ideas, emociones, percepciones y sensaciones.
+
+</p>
+                        <br>
+                    <br>
+                    <br>
+
+                    </article>
+               <br>
+               <br>
+
+               <section class="main">
+                <section class="articles">
+                <article>
+                        <center><h1 style="color:#F4F4F6";>" " El arte es el reflejo de la cultura humana " "</h1></center>
+                        <br>
+                    <p style="color:#F4F4F6";>por eso sirve para conservar el patrimonio cultural de un pueblo y transmitirlo de generación en generació. Además, es subjetivo, se expresa en un lenguaje universal y comprensible para cualquier ser humano, ya que apela a nuestros sentidos, emociones y facultad de pensar.</p>
+                        <br>
+                    <br>
+                    <br>
+    </body>
+</center>
+                    </article>
+               <br>
+
+            <hb>
+            <footer>
+                <h1 style="color:#F4F4F6";>"GRACIAS POR VISITAR NUESTRA PAGINA"</h1>
+                <br>
+                <p style="color:#F4F4F6";>"Puedes contactarnos entrando a nuestra sección de contacto, donde tenemos todas nuestras redes, telefonos para el contacto, y nuestro correo electronico."</p>
+                <p style="color:#F4F4F6";>"Puedes conocer mas de nosotros en la seccion de nuestra empresa."</p>
+                <p style="color:#F4F4F6";>"Puedes buscar mas servicios en nuestra seccion del mismo nombre."</p>
+                <br>
+            </footer>
+
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="static/obras.jpg" width="600px" class="d-block w-100" height="700" >
+      <div class="carousel-caption d-none d-md-block">
+        <h5>El arte Visual es:</h5>
+        <p>La fuente que dio origen a la actividad artística así como al proceso precedente gracias al que se formaron los sentimientos y necesidades estéticos del hombre, fue el trabajo.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="static/obradearte.jpg" width="600" class="d-block w-100" height="700">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>En ese sentido....</h5>
+        <p>arte es sinónimo de capacidad, habilidad, talento, experiencia. Sin embargo, más comúnmente se suele considerar al arte como una actividad creadora del ser humano,
+          por la cual produce una serie de objetos (obras de arte) que son singulares, y cuya finalidad es principalmente estética.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="static/arteyestetica.jpg" width="600" class="d-block w-100" height="700">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>En definitiva</h5>
+        <p>Cualquier habilidad sujeta a reglas, a preceptos específicos que la hacen objeto de aprendizaje y de evolución y perfeccionamiento técnico.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+                </div>
+
+</html>
+
+
+{% endblock %}

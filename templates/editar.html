@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!Doctypehtml>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TABLA DE REGISTRO</title>
+
+
+            <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css_contacto.css')}}">
+
+
+
+
+</style>
+    </head>
+    <body>
+           <header id="principal">
+               <span id= "titulo">EDITAR DATOS OBRA O MANUALIDAD</span>
+            </header>
+
+
+            <section class="main">
+                <section class="articles">
+                    <article>
+
+                        <br>
+                        <br>
+
+<center>
+<form action="/editar_obra/{{nombre_obra.0}}" method="post">
+   <div class="container">
+              <div class="form-row">
+               <div class="col-xs-12 ">
+                <div class="mb-3">
+                      <label for="nombre_obra" class="form-label">Nombre de la obra o manualidad</label>
+                      <input type="text" class="form-control" name="nombre_obra" id="nombre_obra"value="{{nombre_obra.1}}"></input>
+                </div>
+                <div class="mb-3">
+                      <label for="descripcion" class="form-label">Información de la obra </label>
+                      <input type="text" class="form-control" name="descripcion" id="descripcion" value="{{nombre_obra.2}}"></input>
+                </div>
+
+                   <div class="mb-3">
+                      <label for="autor" class="form-label">Autor</label>
+                      <input type="text" class="form-control" name="autor" id="autor" value="{{nombre_obra.3}}"></input>
+                   </div>
+
+                   <div class="mb-3">
+                      <label for="lugar_elab" class="form-label">Lugar de elaboración</label>
+                      <input type="text" class="form-control" name="lugar_elab" id="lugar_elab" value="{{nombre_obra.4}}"></input>
+                   </div>
+
+                   <div class="mb-3">
+                      <label for="valor" class="form-label">Valor</label>
+                      <input type="text" class="form-control" name="valor" id="valor" value="{{nombre_obra.5}}"></input>
+                   </div>
+
+                   <div class="mb-3">
+                      <label for="ubicacion" class="form-label">Ubicación</label>
+                      <input type="text" class="form-control" name="ubicacion" id="ubicacion" value="{{nombre_obra.6}}"></input>
+                   </div>
+
+                </div>
+          </div>
+
+
+          <button type="submit" class="btn btn-primary">Actualizar</button>
+</form>
+</center>
+
+
+
+
+</article>
+                </section>
+
+            </section>
+            <hb>
+
+        </body>
+
+</html>
+
+
+{% endblock %}

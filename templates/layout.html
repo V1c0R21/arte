@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
+    
+    <title>ARTE</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css_layout.css')}}">
+
+</head>
+<body>
+ <!--Barra de Menu -->
+
+           <header>
+
+               <!--<nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: #1C1817;" >
+
+                <div class="logo">
+                    <img class="logo" src="{{url_for('static', filename='img_index/logo.jpg')}}"  width="180px" height="180px">
+                </div>
+            <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/formulario">Formulario obra o manualidad </a></li>
+                <li><a href="/tabla_obra">Tabla obra o manualidad</a></li>
+                <li><a href="/clientes">Formulario Clientes</a></li>
+                <li><a href="/tablaCliente">Tabla registro clientes</a></li>
+                <li><a href="/formulario_subasta">Formulario subasta</a></li>
+                <li><a href="/tabla_subasta">Tabla subasta</a></li>
+                <li><a href="/galeria">galeria</a></li>
+
+
+            </ul>
+            </nav>-->
+
+
+                               <nav class="navbar navbar-expand-lg" style="background-color: #1C1817;" >
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="/static/img_index/logo.jpg" alt="Bootstrap" width="180" height="180"> <!--Cambiar logo-->
+                      </a>
+
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">INICIO</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="formulario" ole="button" data-bs-toggle="dropdown" aria-expanded="false">OBRAS O MANUALIDADES</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/formulario">Formulario obra o manualidad</a></li>
+                            <li><a class="dropdown-item" href="/tabla_obra">Tabla obra o manualidad</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  ole="button" data-bs-toggle="dropdown" aria-expanded="false">CLIENTES </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/clientes">Formulario Clientes</a></li>
+                            <li><a class="dropdown-item" href="/tablaCliente">Tabla registro clientes</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  ole="button" data-bs-toggle="dropdown" aria-expanded="false">SUBASTA</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/formulario_subasta">Formulario subasta</a></li>
+                            <li><a class="dropdown-item" href="/tabla_subasta">Tabla subasta</a></li>
+                        </ul>
+                      </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  href="/galeria">GALERIA</a>
+                      </li>
+
+
+                    </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </header>
+
+
+
+
+ {% block content %}
+ {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

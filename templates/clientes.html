@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+<!Doctypehtml>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULARIO CLIENTE</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css_contacto.css')}}">
+
+    </head>
+    <body>
+<header id="principal">
+               <span id= "titulo">FORMULARIO CLIENTES </span>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css_contacto.css')}}">
+
+            </header>
+
+
+<center>
+           <section class="main">
+                <section class="articles">
+                    <article>
+           <h1>
+    <CENTER> <b> ¡Registrate dentro del formulario de clientes! </b> </CENTER>
+
+</h1>
+   <br>
+
+    <div class="form-row">
+        <form action="/agrega_cliente" method="post">
+            <div class="col-md-12">
+                <label for="nombreC" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="nombreC" id="nombreC" required></input>
+            </div>
+            <div class="col-md-12">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" name="apellido" id="apellido" required></input>
+            </div>
+            <div class="col-md-12">
+                <label for="tel" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" name="tel" id="tel" required></input>
+            </div>
+            <div class="col-md-12">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" name="email" id="email" required></input>
+            </div>
+            <div class="col-md-12">
+                <label for="obraIn" class="form-label">Obra de Interes</label> <!-- Hacer un for para mostere, así como en el poryecto de puesto en la parte de area -->
+                    <input type="text" class="form-control" name="obraIn" id="obraIn" required></input>
+            </div>
+            <div class="col-md-12">
+                <label for="dir" class="form-label">Dirección</label>
+                <input type="text" class="form-control" name="dir" id="dir" required></input>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+                    </article>
+		</section>
+               </center>
+            <hb>
+
+        </body>
+
+</html>
+
+
+{% endblock %}

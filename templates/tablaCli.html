@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<!Doctypehtml>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TABLA DE CLIENTE</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css_contacto.css')}}">
+    </head>
+    <body>
+           <header id="principal">
+               <span id= "titulo">TABLA DE CLIENTES </span>
+            </header>
+            <section class="main">
+                <section class="articles">
+
+                        <br>
+    <table width="150%" border="1" cellpadding="0" bordercolor="#000000">
+    <tbody>
+    <tr>
+    <td color="#FFFFFF" bgcolor="#F9E64D" valign="top">
+        <center><h3>CLIENTES</h3></center>
+    <right><h3><a class="btn btn-primary" href="/clientes">Agrega un cliente</a></h3></right>
+
+    <table width="100%" border="1" cellpadding="0" bordercolor="#000000">
+    <thead>
+      <tr>
+        <td color="white" bgcolor="#DCD9C2">NOMBRE</td>
+        <td color="white" bgcolor="#DCD9C2">APELLIDO</td>
+        <td color="white" bgcolor="#DCD9C2">TELEFONO</td>
+        <td color="white" bgcolor="#DCD9C2">CORREO ELECTRÓNICO</td>
+        <td color="white" bgcolor="#DCD9C2">OBRA DE INTERES</td>
+        <td color="white" bgcolor="#DCD9C2">DIRECCIÓN</td>
+
+
+        <td color="black" bgcolor="#F9CAA1">DETALLE</td>
+        <td color="black" bgcolor="#F9CAA1">EDITAR</td>
+        <td color="black" bgcolor="#F9CAA1">BORRAR</td>
+      </tr>
+    </thead>
+    <tbody>
+    {% for i in cliente %}
+        <tr>
+        <td width="15%">
+           {{i.1}}
+        </td>
+        <td width="15%">
+           {{i.2}}
+        </td>
+        <td width="15%">
+           {{i.3}}
+        </td>
+        <td width="25%">
+           {{i.4}}
+        </td>
+        <td width="20%">
+           {{i.5}}
+        </td>
+        <td width="42%">
+           {{i.6}}
+        </td>
+
+
+        <td bgcolor="#E4CFA7" width="8%">
+        <center><a class="btn btn-outline-primary" href="/Cdetalle/{{i.0}}" style="...">DETALLE</a></center>
+        </td>
+        <td bgcolor="#E8DF97" width="8%">
+        <center><a class="btn btn-outline-primary" href="/editarC/{{i.0}}" style="...">EDITAR</a></center>
+        </td>
+        <td bgcolor="#F9BE50" width="8%">
+        <center><a class="btn btn-primary" href="/Cborrar/{{i.0}}" style="...">BORRAR</a></center>
+        </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+                </section>
+
+            </section>
+            <hb>
+
+
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

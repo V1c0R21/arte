@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!Doctypehtml>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TABLA DE REGISTRO</title>
+            <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css_contacto.css')}}">
+
+
+</style>
+    </head>
+    <body>
+           <header id="principal">
+               <span id= "titulo">EDITAR SUBASTA</span>
+            </header>
+
+
+            <section class="main">
+                <section class="articles">
+                    <article>
+
+                        <br>
+                        <br>
+
+
+<form action="/editar_subasta/{{nombre_obr.0}}" method="post">
+   <div class="container">
+              <div class="form-row">
+                 <div class="col-xs-12 ">
+                <div class="mb-3">
+                      <label for="nombre_obra" class="form-label">Nombre de la obra</label>
+                      <input type="text" class="form-control" name="nombre_obra" id="nombre_obra"value="{{nombre_obr.1}}" required></input>
+                </div>
+                <div class="mb-3">
+                      <label for="nombre" class="form-label">Clientes que participan </label>
+                      <input type="text" class="form-control" name="nombre" id="nombre"value="{{nombre_obr.2}}" required></input>
+                </div>
+
+                   <div class="mb-3">
+                      <label for="valor" class="form-label">Valor</label>
+                      <input type="text" class="form-control" name="valor" id="valor"value="{{nombre_obr.3}}" required></input>
+                   </div>
+
+                   <div class="mb-3">
+                      <label for="hora_inicio" class="form-label">Hora de inicio</label>
+                      <input type="text" class="form-control" name="hora_inicio" id="hora_inicio"value="{{nombre_obr.4}}" required></input>
+                   </div>
+
+                   <div class="mb-3">
+                      <label for="hora_fin" class="form-label">Hora de finalización</label>
+                      <input type="text" class="form-control" name="hora_fin" id="hora_fin"value="{{nombre_obr.5}}" required></input>
+                   </div>
+
+                   <div class="mb-3">
+                      <label for="autor" class="form-label">Autor de la obra</label>
+                      <input type="text" class="form-control" name="autor" id="autor"value="{{nombre_obr.6}}" required></input>
+                   </div>
+
+                   <div class="mb-3">
+                      <label for="juez" class="form-label">Juez</label>
+                      <input type="text" class="form-control" name="juez" id="juez"value="{{nombre_obr.7}}" required></input>
+                   </div>
+
+
+                </div>
+          </div>
+
+
+
+
+
+
+
+          <button type="submit" class="btn btn-primary">Actualizar</button>
+</form>
+</center>
+
+
+
+
+</article>
+                </section>
+
+            </section>
+            <hb>
+
+        </body>
+
+</html>
+
+
+{% endblock %}

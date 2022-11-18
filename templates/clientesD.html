@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+
+<!Doctypehtml>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULARIO ART</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css_contacto.css')}}">
+
+    </head>
+    <body>
+
+<center>
+           <section class="main">
+                <section class="articles">
+                    <article>
+           <h1>
+    <CENTER> <b> ¡Detalle sobre datos del cliente:! </b> </CENTER>
+
+</h1>
+
+<div class="container">
+<br>
+
+
+
+                    <article>
+<h3>
+
+
+<div class="container">
+    <br>
+    <div class="form-row">
+            <div class="col-md-12">
+                <label for="nombreC" class="form-label">Nombre</label>
+                <input type="text" class="form-control" name="nombreC" id="nombreC" value="{{dat.1}}"  readonly></input>
+            </div>
+            <div class="col-md-12">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" name="apellido" id="apellido" value="{{dat.2}}" readonly></input>
+            </div>
+            <div class="col-md-12">
+                <label for="tel" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" name="tel" id="tel" value="{{dat.3}}"  readonly></input>
+            </div>
+            <div class="col-md-12">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" name="email" id="email"  value="{{dat.4}}" readonly></input>
+            </div>
+            <div class="col-md-12">
+                <label for="obraIn" class="form-label">Obra de Interes</label> <!-- Hacer un for para mostere, así como en el poryecto de puesto en la parte de area -->
+                    <input type="text" class="form-control" name="obraIn" id="obraIn"  value="{{dat.5}}" readonly></input>
+            </div>
+            <div class="col-md-12">
+                <label for="dir" class="form-label">Dirección</label>
+                <input type="text" class="form-control" name="dir" id="dir" value="{{dat.6}}" readonly></input>
+            </div>
+            <!--button type="submit" class="btn btn-primary">Enviar</button-->
+    </div>
+</div>
+
+
+
+</article>
+
+
+</form>
+                    </article>
+		</section>
+               </center>
+            <hb>
+
+        </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+<!Doctypehtml>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULARIO ART</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css_contacto.css')}}">
+
+    </head>
+    <body>
+
+<center>
+           <section class="main">
+                <section class="articles">
+                    <article>
+           <h1>
+    <CENTER> <b> ¡Detalle de la subasta:! </b> </CENTER>
+
+</h1>
+   <br>
+
+<div class="container">
+                    <article>
+<h3>
+
+
+
+<div class="container">
+<br>
+
+<h3>
+
+
+
+<div class="col-md-12">
+<label for="nombre_obra" class="form-label">Nombre de la obra o manualidad</label>
+<input type="text" class="form-control" name="nombre_obra" id="nombre_obra" value="{{dat.1}}" readonly="readonly"></input>
+</div>
+<br>
+
+<div class="col-md-12">
+<label for="nombre" class="form-label">Clientes que participan</label>
+<input type="text" class="form-control" name="nombre" id="nombre" value="{{dat.2}}" readonly="readonly"></input>
+</div>
+<br>
+
+<div class="col-md-12">
+<label for="valor" class="form-label">Valor</label>
+<input type="text" class="form-control" name="valor" id="valor" value="{{dat.3}}" readonly="readonly"></input>
+</div>
+<br>
+
+<div class="col-md-12">
+<label for="hora_inicio" class="form-label">Hora de inicio</label>
+<input type="text" class="form-control" name="hora_inicio" id="hora_inicio" value="{{dat.4}}" readonly="readonly"></input>
+</div>
+<br>
+
+
+
+<div class="col-md-12">
+<label for="hora_fin" class="form-label">Hora de finalización</label>
+<input type="text" class="form-control" name="hora_fin" id="hora_fin" value="{{dat.5}}" readonly="readonly"></input>
+</div>
+<br>
+
+<div class="col-md-12">
+<label for="autor" class="form-label">Autor de la obra</label>
+<input type="text" class="form-control" name="autor" id="autor" value="{{dat.6}}" readonly="readonly"></input>
+</div>
+<br>
+
+<div class="col-md-12">
+<label for="juez" class="form-label">juez</label>
+<input type="text" class="form-control" name="juez" id="juez" value="{{dat.7}}" readonly="readonly"></input>
+</div>
+<br>
+
+
+
+
+
+
+</article>
+
+
+</form>
+                    </article>
+		</section>
+               </center>
+            <hb>
+
+        </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+<!Doctypehtml>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULARIO ART</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css_contacto.css')}}">
+
+    </head>
+    <body>
+
+<center>
+           <section class="main">
+                <section class="articles">
+                    <article>
+           <h1>
+    <CENTER> <b> ¡Detalle obra o manualidad:! </b> </CENTER>
+
+</h1>
+   <br>
+
+<div class="container">
+<br>
+
+
+
+                    <article>
+<h3>
+
+
+
+<div class="col-md-12">
+<label for="nombre_obra" class="form-label">Nombre de la obra o manualidad</label>
+<input type="text" class="form-control" name="nombre_obra" id="nombre_obra" value="{{dat.1}}" readonly="readonly"></input>
+</div>
+
+<br>
+
+
+<div class="col-md-12">
+<label for="descripcion" class="form-label">Información de la obra</label>
+<input type="text" class="form-control" name="descripcion" id="descripcion" value="{{dat.2}}" readonly="readonly"></input>
+</div>
+<br>
+
+<div class="col-md-12">
+<label for="autor" class="form-label">Autor</label>
+<input type="text" class="form-control" name="autor" id="autor" value="{{dat.3}}" readonly="readonly"></input>
+</div>
+<br>
+
+<div class="col-md-12">
+<label for="lugar_elab" class="form-label">Lugar de elaboración</label>
+<input type="text" class="form-control" name="lugar_elab" id="lugar_elab" value="{{dat.4}}" readonly="readonly"></input>
+</div>
+<br>
+
+<div class="col-md-12">
+<label for="valor" class="form-label">Valor</label>
+<input type="text" class="form-control" name="valor" id="valor" value="{{dat.5}}" readonly="readonly"></input>
+</div>
+<br>
+
+<div class="col-md-12">
+<label for="ubicacion" class="form-label">Ubicación</label>
+<input type="text" class="form-control" name="ubicacion" id="ubicacion" value="{{dat.6}}" readonly="readonly"></input>
+</div>
+<br>
+
+</article>
+
+
+</form>
+                    </article>
+		</section>
+               </center>
+            <hb>
+
+        </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

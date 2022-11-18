@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+{% block content %}
+<!Doctypehtml>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TABLA DE REGISTRO</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css_contacto.css')}}">
+    </head>
+    <body>
+           <header id="principal">
+               <span id= "titulo">TABLA DE PINTURAS, OBRAS O MANUALIDADES</span>
+            </header>
+
+            <section class="main">
+                <section class="articles">
+                    <center>
+
+                        <br>
+    <table width="151%" border="1" cellpadding="0" bordercolor="#000000">
+    <tbody>
+    <tr>
+    <td color="#FFFFFF" bgcolor="#FAE63B" valign="top">
+            <center><h3>OBRA O MANUALIDAD</h3></center>
+
+    <right><h3><a class="btn btn-primary" href="/formulario">Agrega una nueva obra o manualidad</a></h3></right>
+    <table width="100%" border="1" cellpadding="0" bordercolor="#000000">
+    <thead>
+      <tr>
+        <td color="white" bgcolor="#DCD9C2">NOMBRE OBRA</td>
+        <td color="white" bgcolor="#DCD9C2">DESCRIPCIÓN</td>
+        <td color="white" bgcolor="#DCD9C2">AUTOR</td>
+        <td color="white" bgcolor="#DCD9C2">LUGAR ELABORACION</td>
+        <td color="white" bgcolor="#DCD9C2">VALOR</td>
+        <td color="white" bgcolor="#DCD9C2">UBICACION</td>
+
+        <td color="black" bgcolor="#F9CAA1">DETALLE</td>
+        <td color="black" bgcolor="#F9CAA1">EDITAR</td>
+        <td color="black" bgcolor="#F9CAA1">BORRAR</td>
+      </tr>
+    </thead>
+    <tbody>
+    {% for i in nombre_obra %}
+        <tr>
+        <td width="15%">
+           {{i.1}}
+        </td>
+        <td width="15%">
+           {{i.2}}
+        </td>
+        <td width="15%">
+           {{i.3}}
+        </td>
+        <td width="30%">
+           {{i.4}}
+        </td>
+        <td width="15%">
+           {{i.5}}
+        </td>
+        <td width="42%">
+           {{i.6}}
+        </td>
+
+
+
+        <td bgcolor="#E4CFA7" width="8%">
+        <center><a class="btn btn-outline-primary" href="/fdetalle/{{i.0}}" style="...">DETALLE</a></center>
+        </td>
+        <td bgcolor="#E8DF97" width="8%">
+        <center><a class="btn btn-outline-primary" href="/editar/{{i.0}}" style="...">EDITAR</a></center>
+        </td>
+        <td bgcolor="#" width="8%">
+        <center><a class="btn btn-primary" href="/borrar/{{i.0}}" style="...">BORRAR</a></center>
+        </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+                </section>
+
+            </section>
+           </center>
+            <hb>
+
+    </body>
+
+</html>
+
+{% endblock %}

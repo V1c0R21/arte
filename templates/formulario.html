@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<!Doctypehtml>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULARIO ART</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css_contacto.css')}}">
+
+    </head>
+    <body>
+           <header id="principal">
+               <span id= "titulo"> FORMULARIO OBRA O MANUALIDAD </span>
+            </header>
+
+
+<center>
+           <section class="main">
+                <section class="articles">
+                    <article>
+           <h1>
+    <CENTER> <b> ¡Registra dentro del formulario tu obra o manualidad! </b> </CENTER>
+
+</h1>
+   <br>
+<form action="/agrega_obra" method="post">
+   <div class="container">
+          <div class="form-row">
+               <div class="col-xs-12 ">
+                <div class="mb-3">
+                      <label for="nombre_obra" class="form-label">Nombre de la obra o manualidad</label>
+                      <input type="text" class="form-control" name="nombre_obra" id="nombre_obra"></input>
+                </div>
+                <div class="mb-3">
+                      <label for="descripcion" class="form-label">Información de la obra </label>
+                      <input type="text" class="form-control" name="descripcion" id="descripcion"></input>
+                </div>
+
+                   <div class="mb-3">
+                      <label for="autor" class="form-label">Autor</label>
+                      <input type="text" class="form-control" name="autor" id="autor"></input>
+                   </div>
+
+                   <div class="mb-3">
+                      <label for="lugar_elab" class="form-label">Lugar de elaboración</label>
+                      <input type="text" class="form-control" name="lugar_elab" id="lugar_elab"></input>
+                   </div>
+
+                   <div class="mb-3">
+                      <label for="valor" class="form-label">Valor</label>
+                      <input type="text" class="form-control" name="valor" id="valor"></input>
+                   </div>
+
+                   <div class="mb-3">
+                      <label for="ubicacion" class="form-label">Ubicación</label>
+                      <input type="text" class="form-control" name="ubicacion" id="ubicacion"></input>
+                   </div>
+
+
+
+                </div>
+          </div>
+    </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+                    </article>
+		</section>
+               </center>
+            <hb>
+
+
+
+</html>
+
+
+
+
+
+
+{% endblock %}

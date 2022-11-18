@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<!Doctypehtml>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMULARIO ART</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css_contacto.css')}}">
+
+    </head>
+    <body>
+           <header id="principal">
+               <span id= "titulo"> FORMULARIO SUBASTA </span>
+            </header>
+
+<center>
+
+           <section class="main">
+                <section class="articles">
+                    <article>
+           <h1>
+    <CENTER> <b> ¡Registra dentro del formulario tu subasta! </b> </CENTER>
+
+</h1>
+   <br>
+<form action="/agrega_subasta" method="post">
+   <div class="container">
+          <div class="form-row">
+               <div class="col-xs-12 ">
+                <div class="mb-3">
+                      <label for="nombre_obra" class="form-label">Nombre de la obra</label>
+                      <input type="text" class="form-control" name="nombre_obra" id="nombre_obra"></input>
+                </div>
+                <div class="mb-3">
+                      <label for="nombre" class="form-label">Clientes que participan </label>
+                      <input type="text" class="form-control" name="nombre" id="nombre"></input>
+                </div>
+
+                   <div class="mb-3">
+                      <label for="valor" class="form-label">Valor</label>
+                      <input type="text" class="form-control" name="valor" id="valor"></input>
+                   </div>
+
+                   <div class="mb-3">
+                      <label for="hora_inicio" class="form-label">Hora de inicio</label>
+                      <input type="text" class="form-control" name="hora_inicio" id="hora_inicio"></input>
+                   </div>
+
+                   <div class="mb-3">
+                      <label for="hora_fin" class="form-label">Hora de finalización</label>
+                      <input type="text" class="form-control" name="hora_fin" id="hora_fin"></input>
+                   </div>
+
+                   <div class="mb-3">
+                      <label for="autor" class="form-label">Autor de la obra</label>
+                      <input type="text" class="form-control" name="autor" id="autor"></input>
+                   </div>
+
+                   <div class="mb-3">
+                      <label for="juez" class="form-label">Juez</label>
+                      <input type="text" class="form-control" name="juez" id="juez"></input>
+                   </div>
+
+
+                </div>
+          </div>
+    </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+                    </article>
+		</section>
+            <hb>
+</center>
+        </body>
+
+</html>
+
+
+
+
+
+
+{% endblock %}
